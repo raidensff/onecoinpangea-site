@@ -1,39 +1,166 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>OneCoin: one coin. five chains.</title>
-<meta name="description" content="OneCoin is a meme token for five chains: Solana, Robinhood Chain, Base, Ethereum and BNB Chain. Launching via Pangea.">
+<title>OneCoin | one coin. five chains.</title>
+<meta name="description" content="OneCoin: one meme coin across Solana, Robinhood Chain, Base, Ethereum and BNB Chain. Launching via Pangea.">
 <meta property="og:title" content="OneCoin"><meta property="og:description" content="one coin. five chains."><meta property="og:image" content="https://onecoinpangea.fun/assets/og.png"><meta property="og:url" content="https://onecoinpangea.fun/"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://onecoinpangea.fun/assets/og.png">
 <link rel="icon" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Kanit:ital,wght@0,400;0,500;0,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <style>
-:root{--v:#8b5cf6;--b:#3b82f6;--g:#22c55e;--a:#f59e0b;--p:#ec4899}
-*{box-sizing:border-box;margin:0}body{background:#000;color:#eee;font-family:system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.6}
-.bands{position:fixed;inset:0;z-index:-1;display:flex;opacity:.13;filter:blur(40px)}.bands i{flex:1}
-.bands i:nth-child(1){background:var(--v)}.bands i:nth-child(2){background:var(--b)}.bands i:nth-child(3){background:var(--g)}.bands i:nth-child(4){background:var(--a)}.bands i:nth-child(5){background:var(--p)}
-nav{display:flex;justify-content:space-between;align-items:center;padding:18px 6vw}nav a{color:#ccc;text-decoration:none;margin-left:20px}nav b{letter-spacing:.15em}
-section{padding:80px 6vw;max-width:1100px;margin:auto}
-.hero{text-align:center;padding-top:60px}.hero img{width:min(260px,60vw);border-radius:50%;box-shadow:0 0 60px #8b5cf688,0 0 120px #ec489955}
-h1{font-size:clamp(2.6rem,8vw,5rem);letter-spacing:.12em;margin-top:24px;background:linear-gradient(90deg,var(--v),var(--b),var(--g),var(--a),var(--p));-webkit-background-clip:text;color:transparent}
-.tag{font-size:1.3rem;color:#bbb}.btn{display:inline-block;margin:28px 8px 0;padding:12px 26px;border-radius:999px;border:1px solid #444;color:#fff;text-decoration:none}.btn.main{background:linear-gradient(90deg,var(--v),var(--p));border:0}
-h2{font-size:2rem;margin-bottom:24px;text-align:center}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
-.card{background:#0d0d0d;border:1px solid #222;border-radius:16px;padding:22px;border-top:4px solid var(--c)}.card h3{color:var(--c)}
-ol{max-width:640px;margin:auto;padding-left:1.2em}ol li{margin:12px 0}
-.ca{margin:30px auto 0;max-width:640px;background:#0d0d0d;border:1px dashed #444;border-radius:12px;padding:16px;text-align:center;font-family:monospace}
-.note{max-width:640px;margin:24px auto 0;color:#888;font-size:.9rem;text-align:center}
-footer{text-align:center;padding:40px 6vw;color:#777;border-top:1px solid #1a1a1a}footer a{color:#ccc;margin:0 10px}
-</style></head><body><div class="bands"><i></i><i></i><i></i><i></i><i></i></div>
-<nav><b>ONECOIN</b><div><a href="#chains">Chains</a><a href="#buy">How to buy</a></div></nav>
-<section class="hero"><img src="assets/logo.png" alt="OneCoin logo"><h1>ONECOIN</h1><p class="tag">one coin. five chains.</p>
-<a class="btn main" href="#buy">How to buy</a><a class="btn" href="https://x.com/LaunchOnPangea" target="_blank" rel="noopener">Launching on Pangea</a></section>
-<section id="chains"><h2>Five chains, one coin</h2><div class="grid">
-<div class="card" style="--c:var(--v)"><h3>Solana</h3><p>Fast and cheap.</p></div>
-<div class="card" style="--c:var(--b)"><h3>Robinhood Chain</h3><p>The newest link.</p></div>
-<div class="card" style="--c:var(--g)"><h3>Base</h3><p>Onchain and social.</p></div>
-<div class="card" style="--c:var(--a)"><h3>Ethereum</h3><p>Where it all started.</p></div>
-<div class="card" style="--c:var(--p)"><h3>BNB Chain</h3><p>Big community.</p></div></div></section>
-<section id="buy"><h2>How to buy</h2><ol>
-<li>Get a wallet that supports your chain.</li><li>Fund it with that chain's native token for gas.</li>
-<li>Follow <a href="https://x.com/LaunchOnPangea" style="color:#ccc">Pangea</a> for the launch.</li><li>Paste the official contract address below and swap.</li></ol>
-<div class="ca">Contract address: <b>TBA</b></div>
-<p class="note">OneCoin is a meme token with no intrinsic value or expectation of financial return. Only use the official contract address, and never share your seed phrase.</p></section>
-<footer><a href="#">X</a><a href="https://x.com/LaunchOnPangea" target="_blank" rel="noopener">Pangea</a><p style="margin-top:12px">© 2026 OneCoin</p></footer>
-</body></html>
+:root{--bg:#04040c;--bg2:#000;--panel:#0c0c1c;--edge:#23233d;--text:#cfd3e6;--mist:#8a8fab;--chrome:#f2f4fa;
+--v:#a06bff;--b:#4a8cff;--g:#3fe08a;--a:#ffc233;--p:#ff4fa3;--hot:var(--g);
+--fd:"Kanit","Arial Black",sans-serif;--fh:"Chakra Petch",ui-monospace,monospace}
+*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;background:var(--bg2)}
+body{margin:0;background:linear-gradient(180deg,var(--bg) 0,var(--bg) 1000px,var(--bg2));color:var(--text);font:400 1.0625rem/1.6 var(--fd);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,p{margin:0}a{color:var(--hot)}img{max-width:100%}
+#sky{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+main,footer,header{position:relative;z-index:1}
+.wrap{max-width:1180px;margin:auto;padding:0 18px}
+[data-c=sol]{--c:var(--v)}[data-c=rh]{--c:var(--b)}[data-c=base]{--c:var(--g)}[data-c=eth]{--c:var(--a)}[data-c=bsc]{--c:var(--p)}
+.chip{display:inline-block;font:700 .72rem/1 var(--fh);letter-spacing:.05em;color:#000;background:var(--c,var(--hot));padding:4px 7px 3px;border-radius:3px;transform:skewX(-10deg)}
+/* nav */
+header{position:sticky;top:0;z-index:30;background:rgba(4,4,12,.8);backdrop-filter:blur(10px);border-bottom:1px solid var(--edge)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;gap:10px;align-items:center;font:italic 900 1.4rem var(--fd);color:var(--chrome);text-decoration:none}.brand img{width:34px;border-radius:50%}
+nav{display:flex;gap:22px;align-items:center}nav a{color:var(--text);text-decoration:none;font:600 .85rem var(--fh)}nav a:hover{color:var(--chrome)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 24px;font:700 .95rem var(--fh);text-decoration:none;color:var(--chrome);border:1px solid var(--edge);background:var(--panel);transform:skewX(-10deg);transition:transform .15s,box-shadow .2s;cursor:pointer}
+.btn>span{transform:skewX(10deg)}.btn:hover{transform:skewX(-10deg) translateY(-2px)}
+.btn.go{color:#000;border:0;background:linear-gradient(90deg,var(--v),var(--b),var(--g),var(--a),var(--p));background-size:200%;animation:sheen 4s linear infinite;box-shadow:0 0 24px rgba(63,224,138,.35)}
+.btn.sm{min-height:36px;padding:0 14px;font-size:.8rem}
+@keyframes sheen{to{background-position:200% 0}}
+@media(max-width:720px){nav a:not(.btn){display:none}}
+/* hero */
+.hero{padding:56px 0 30px}.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+@media(max-width:880px){.hero .wrap{grid-template-columns:1fr}}
+.pill{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--edge);border-radius:99px;padding:5px 12px;font:600 .78rem var(--fh);background:rgba(12,12,28,.7)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--g);box-shadow:0 0 10px var(--g);animation:blink 1.4s infinite}@keyframes blink{50%{opacity:.3}}
+.word{font:italic 900 clamp(4rem,13vw,8.5rem)/.9 var(--fd);margin:22px 0 10px;letter-spacing:-.02em;background:linear-gradient(180deg,#fff 0,#dfe4ef 45%,#8790a8 52%,#eef1f7 70%,#fff);-webkit-background-clip:text;color:transparent;filter:drop-shadow(0 0 22px rgba(160,107,255,.45)) drop-shadow(0 4px 0 #1b1b33)}
+.sub{font:italic 800 clamp(1.3rem,2.6vw,1.8rem) var(--fd);background:linear-gradient(90deg,var(--v),var(--b),var(--g),var(--a),var(--p));-webkit-background-clip:text;color:transparent}
+.lede{font:italic 700 1.35rem/1.3 var(--fd);color:var(--chrome);margin:14px 0 12px;max-width:26ch}
+.hero p.body{color:var(--text);max-width:52ch}
+.ctas{display:flex;flex-wrap:wrap;gap:14px;margin:26px 0}
+.frame{position:relative;padding:18px;background:rgba(12,12,28,.75);border:1px solid var(--edge)}
+.frame::before,.frame::after{content:"";position:absolute;width:18px;height:18px;border:2px solid var(--hot)}
+.frame::before{top:-2px;left:-2px;border-right:0;border-bottom:0}.frame::after{bottom:-2px;right:-2px;border-left:0;border-top:0}
+.ca .lbl{font:600 .75rem var(--fh);color:var(--mist);margin-bottom:8px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}.tabs button{font:700 .75rem var(--fh);color:var(--text);background:transparent;border:1px solid var(--edge);padding:6px 10px;cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--c);color:#000;border-color:var(--c)}
+.addr{display:flex;gap:8px}.addr code{flex:1;font:600 .95rem var(--fh);background:#000;border:1px solid var(--edge);padding:12px;color:var(--chrome)}
+.art{position:relative;aspect-ratio:1;display:grid;place-items:center}
+.art .ring{position:absolute;inset:4%;border-radius:50%;background:conic-gradient(var(--v),var(--b),var(--g),var(--a),var(--p),var(--v));animation:spin 14s linear infinite;filter:blur(30px);opacity:.55}
+.art img{position:relative;width:78%;border-radius:50%;animation:float 5s ease-in-out infinite;box-shadow:0 0 0 3px #000,0 0 50px rgba(255,255,255,.12)}
+.art .tag{position:absolute;bottom:6%;left:6%;font:700 .75rem var(--fh);background:var(--g);color:#000;padding:4px 8px;transform:skewX(-10deg)}
+@keyframes spin{to{transform:rotate(1turn)}}@keyframes float{50%{transform:translateY(-14px) rotate(3deg)}}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--edge);background:rgba(12,12,28,.7);margin-top:36px}
+.stats>div{padding:14px 16px;border-right:1px solid var(--edge)}.stats>div:last-child{border:0}.stats small{font:600 .75rem var(--fh);color:var(--mist)}.stats b{display:block;font:700 1.35rem var(--fh);color:var(--chrome)}
+@media(max-width:720px){.stats{grid-template-columns:1fr 1fr}.stats>div:nth-child(2){border-right:0}}
+.ridge{height:90px;margin-top:-10px;background:linear-gradient(transparent,var(--bg2));position:relative}
+.ridge svg{position:absolute;bottom:0;width:100%;height:100%}
+/* marquee */
+.marquee{overflow:hidden;border-block:1px solid var(--edge);background:#000;padding:12px 0}
+.track{display:flex;gap:40px;width:max-content;animation:mq 30s linear infinite;font:700 .95rem var(--fh);white-space:nowrap;align-items:center}
+.track em{font:italic 800 1rem var(--fd);color:var(--g)}@keyframes mq{to{transform:translateX(-50%)}}
+section.blk{padding:110px 0 20px}
+h2{font:italic 900 var(--h2,clamp(2.1rem,5.2vw,3.25rem))/1.05 var(--fd);color:var(--chrome);margin-bottom:14px}
+.intro{max-width:60ch;color:var(--text);margin-bottom:34px}
+/* versus */
+.vs{display:grid;grid-template-columns:1fr auto 1fr;gap:30px;align-items:center}
+.vs h3{font:italic 900 clamp(3rem,8vw,5rem)/1 var(--fd)}.vs .bad h3{color:#e2603a}.vs .good h3{background:linear-gradient(90deg,var(--v),var(--g),var(--p));-webkit-background-clip:text;color:transparent}
+.vsb{font:italic 900 2.6rem var(--fd);color:var(--a);border:4px solid var(--a);padding:6px 20px;transform:rotate(-8deg) skewX(-8deg);box-shadow:0 0 30px rgba(255,194,51,.35);animation:pulse 2s infinite}
+@keyframes pulse{50%{transform:rotate(-8deg) skewX(-8deg) scale(1.08)}}
+@media(max-width:760px){.vs{grid-template-columns:1fr}.vsb{justify-self:center}}
+/* chains */
+.grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}@media(max-width:900px){.grid5{grid-template-columns:1fr 1fr}}@media(max-width:480px){.grid5{grid-template-columns:1fr}}
+.ch{position:relative;padding:20px;background:var(--panel);border:1px solid var(--edge);overflow:hidden;transition:transform .2s,border-color .2s}
+.ch:hover{transform:translateY(-6px);border-color:var(--c)}
+.ch .bar{height:120px;margin:16px 0;background:#000;border:1px solid var(--edge);position:relative;overflow:hidden}
+.ch .bar i{position:absolute;inset:auto 0 0;height:30%;background:linear-gradient(0deg,var(--c),transparent);transition:height .9s cubic-bezier(.2,1.4,.4,1)}
+.ch.up .bar i{height:92%}.ch h3{font:italic 800 1.2rem var(--fd);color:var(--chrome)}.ch p{color:var(--mist);font-size:.92rem}
+.hint{font:600 .8rem var(--fh);color:var(--mist);margin-top:14px}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:s}@media(max-width:800px){.steps{grid-template-columns:1fr}}
+.step{padding:24px;border-left:3px solid var(--c);background:linear-gradient(90deg,rgba(255,255,255,.04),transparent)}
+.step::before{counter-increment:s;content:"0" counter(s);font:700 .85rem var(--fh);color:var(--c)}.step h3{font:italic 800 1.3rem var(--fd);color:var(--chrome);margin:6px 0}
+/* buy */
+.buy{display:grid;grid-template-columns:1fr 1fr;gap:24px}@media(max-width:800px){.buy{grid-template-columns:1fr}}
+ol.how{margin:0;padding:0;list-style:none;counter-reset:h}ol.how li{counter-increment:h;display:flex;gap:14px;padding:14px 0;border-bottom:1px dashed var(--edge)}
+ol.how li::before{content:counter(h);font:700 1rem var(--fh);color:#000;background:var(--g);min-width:30px;height:30px;display:grid;place-items:center;transform:skewX(-10deg)}
+.warn{margin-top:16px;font-size:.9rem;color:var(--mist);border-left:3px solid var(--a);padding-left:12px}
+footer{border-top:1px solid var(--edge);margin-top:110px;padding:40px 0;background:#000}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}footer a{color:var(--text);margin-left:18px;font:600 .9rem var(--fh);text-decoration:none}
+.disc{font-size:.82rem;color:var(--mist);max-width:70ch;margin-top:20px}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s,transform .8s}.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style></head><body>
+<canvas id="sky"></canvas>
+<header><div class="wrap"><a class="brand" href="#"><img src="assets/logo.png" alt="">ONECOIN</a>
+<nav><a href="#versus">Why one</a><a href="#chains">Chains</a><a href="#how">How it works</a><a href="#buy">Contract</a><a class="btn go sm" href="#buy"><span>Buy</span></a></nav></div></header>
+<main>
+<section class="hero"><div class="wrap">
+<div><span class="pill"><span class="dot"></span>Launching on 5 chains <span class="chip" data-c="sol">SOL</span></span>
+<h1 class="word">ONECOIN</h1><p class="sub">one coin. five chains.</p>
+<p class="lede">Five chains. One coin. Everybody on the same side.</p>
+<p class="body">OneCoin is one meme token on Solana, Robinhood Chain, Base, Ethereum and BNB Chain. It's launching through Pangea, so you'll be able to buy on whichever chain you already use.</p>
+<div class="ctas"><a class="btn go" href="https://x.com/LaunchOnPangea" target="_blank" rel="noopener"><span>Follow the launch on Pangea</span></a><a class="btn" href="#chains"><span>Tap the chains</span></a></div>
+<div class="frame ca"><div class="lbl">Contract address</div>
+<div class="tabs" role="tablist"><button data-c="sol" aria-selected="true">SOL</button><button data-c="rh">ROBINHOOD</button><button data-c="base">BASE</button><button data-c="eth">ETH</button><button data-c="bsc">BSC</button></div>
+<div class="addr"><code id="addr">TBA</code><button class="btn go sm" id="copy"><span>Copy</span></button></div>
+<div class="lbl" style="margin:8px 0 0" id="addrnote">Solana contract: TBA. Each chain will get its own address.</div></div></div>
+<div class="art"><div class="ring"></div><img src="assets/logo.png" alt="OneCoin logo"><span class="tag">one coin</span></div>
+</div>
+<div class="wrap"><div class="stats"><div><small>Ticker</small><b>TBA</b></div><div><small>Chains</small><b>5</b></div><div><small>Launchpad</small><b>Pangea</b></div><div><small>Contract</small><b>TBA</b></div></div></div>
+<div class="ridge"><svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path fill="#0b0b1d" d="M0 60 L120 30 L240 55 L380 20 L520 50 L660 25 L800 58 L940 18 L1080 48 L1220 28 L1440 55 V90 H0Z"/><path fill="#050510" d="M0 75 L160 50 L300 70 L460 45 L620 72 L780 48 L940 74 L1100 46 L1260 70 L1440 52 V90 H0Z"/></svg></div>
+</section>
+<div class="marquee"><div class="track" id="track"></div></div>
+
+<section class="blk reveal" id="versus"><div class="wrap"><h2>Five chains, one team</h2>
+<div class="vs"><div class="bad"><h3>Split</h3><p>Most memes copy themselves onto every chain. Each copy gets its own chart and its own crowd, so the community ends up competing with itself.</p></div>
+<div class="vsb">VS</div>
+<div class="good"><h3>One</h3><p>OneCoin is a single coin across all five chains. Whichever chain you buy on, you're holding the same coin as everyone else.</p></div></div></div></section>
+
+<section class="blk reveal" id="chains"><div class="wrap"><h2>Light up all five</h2><p class="intro">Each chain has its own color. Tap a card to light it up, then light up all five.</p>
+<div class="grid5">
+<div class="ch" data-c="sol"><span class="chip">SOL</span><div class="bar"><i></i></div><h3>Solana</h3><p>Fast and cheap.</p></div>
+<div class="ch" data-c="rh"><span class="chip">RH</span><div class="bar"><i></i></div><h3>Robinhood Chain</h3><p>The newest link in the chain.</p></div>
+<div class="ch" data-c="base"><span class="chip">BASE</span><div class="bar"><i></i></div><h3>Base</h3><p>Onchain and social.</p></div>
+<div class="ch" data-c="eth"><span class="chip">ETH</span><div class="bar"><i></i></div><h3>Ethereum</h3><p>Where it all started.</p></div>
+<div class="ch" data-c="bsc"><span class="chip">BSC</span><div class="bar"><i></i></div><h3>BNB Chain</h3><p>A big, loud community.</p></div></div>
+<p class="hint" id="hint">0 / 5 chains lit</p></div></section>
+
+<section class="blk reveal" id="how"><div class="wrap"><h2>How it works</h2><p class="intro">One coin. Five homes. Here's the idea.</p>
+<div class="steps"><div class="step" data-c="v" style="--c:var(--v)"><h3>Pick your chain</h3><p>Use the chain and wallet you already have. You don't need to switch.</p></div>
+<div class="step" style="--c:var(--g)"><h3>Grab OneCoin</h3><p>Buy with that chain's official contract once it goes live on Pangea.</p></div>
+<div class="step" style="--c:var(--p)"><h3>Same coin everywhere</h3><p>Whichever chain you're on, you hold the same OneCoin as the rest of the crew.</p></div></div></div></section>
+
+<section class="blk reveal" id="buy"><div class="wrap"><h2>How to buy</h2><div class="buy">
+<ol class="how"><li>Set up a wallet for the chain you want.</li><li>Add some of that chain's native token to pay gas.</li><li>Follow <a href="https://x.com/LaunchOnPangea" target="_blank" rel="noopener">@LaunchOnPangea</a> for the launch.</li><li>Paste the official contract address and swap.</li></ol>
+<div class="frame"><div class="ca"><div class="lbl">Contract addresses</div>
+<p style="font:600 .95rem/2 var(--fh)"><span class="chip" data-c="sol">SOL</span> TBA<br><span class="chip" data-c="rh">RH</span> TBA<br><span class="chip" data-c="base">BASE</span> TBA<br><span class="chip" data-c="eth">ETH</span> TBA<br><span class="chip" data-c="bsc">BSC</span> TBA</p>
+<p class="warn">Only use addresses posted on the official OneCoin channels. Never share your seed phrase with anyone.</p></div></div></div></div></section>
+</main>
+<footer><div class="wrap"><a class="brand" href="#"><img src="assets/logo.png" alt="">ONECOIN</a><div><a href="#">X</a><a href="https://x.com/LaunchOnPangea" target="_blank" rel="noopener">Pangea</a></div>
+<p class="disc">OneCoin is a meme token with no intrinsic value or expectation of financial return. Nothing on this site is financial advice. © 2026 OneCoin</p></div></footer>
+<script>
+// marquee
+const items=[['sol','SOL'],['rh','RH'],['base','BASE'],['eth','ETH'],['bsc','BSC']];
+let h='';for(let k=0;k<2;k++){items.forEach(([c,t],i)=>{h+=`<span class="chip" data-c="${c}">${t}</span>`+(i%2?'<em>one coin. five chains.</em>':'<span>launching on Pangea</span>')})}
+document.getElementById('track').innerHTML=h;
+// tabs
+const names={sol:'Solana',rh:'Robinhood Chain',base:'Base',eth:'Ethereum',bsc:'BNB Chain'};
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tabs button').forEach(x=>x.setAttribute('aria-selected',x===b));document.getElementById('addrnote').textContent=names[b.dataset.c]+' contract: TBA. Each chain will get its own address.'});
+document.getElementById('copy').onclick=e=>{const s=e.currentTarget.querySelector('span');s.textContent='Not live yet';setTimeout(()=>s.textContent='Copy',1400)};
+// chains
+const cards=[...document.querySelectorAll('.ch')],hint=document.getElementById('hint');
+cards.forEach(c=>c.onclick=()=>{c.classList.toggle('up');const n=cards.filter(x=>x.classList.contains('up')).length;hint.textContent=n===5?'All 5 lit: one coin, five chains.':n+' / 5 chains lit';if(n===5)burst()});
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('in')),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+// sky: stars + five rising lines
+const cv=document.getElementById('sky'),cx=cv.getContext('2d');let W,H,stars=[],parts=[];
+const cols=['#a06bff','#4a8cff','#3fe08a','#ffc233','#ff4fa3'];
+function rs(){W=cv.width=innerWidth;H=cv.height=innerHeight;stars=Array.from({length:Math.min(180,W/6)},()=>({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.3+.2,t:Math.random()*6}))}
+addEventListener('resize',rs);rs();
+function burst(){for(let i=0;i<120;i++)parts.push({x:W/2,y:H/2,vx:(Math.random()-.5)*12,vy:(Math.random()-.8)*12,l:60,c:cols[i%5]})}
+let t=0;(function f(){t+=.016;cx.clearRect(0,0,W,H);
+stars.forEach(s=>{cx.globalAlpha=.4+.6*Math.abs(Math.sin(t+s.t));cx.fillStyle='#fff';cx.fillRect(s.x,s.y,s.r,s.r)});
+cx.globalAlpha=.16;cx.lineWidth=2;cols.forEach((c,i)=>{cx.strokeStyle=c;cx.beginPath();for(let x=0;x<=W;x+=20){const y=H*.92-x/W*H*.45+Math.sin(x*.01+t*1.5+i)*14-i*10;x?cx.lineTo(x,y):cx.moveTo(x,y)}cx.stroke()});
+cx.globalAlpha=1;parts=parts.filter(p=>p.l-->0);parts.forEach(p=>{p.x+=p.vx;p.y+=p.vy;p.vy+=.25;cx.fillStyle=p.c;cx.fillRect(p.x,p.y,4,4)});
+requestAnimationFrame(f)})();
+</script></body></html>
