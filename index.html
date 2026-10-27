@@ -67,14 +67,6 @@ h2{font:italic 900 var(--h2,clamp(2.1rem,5.2vw,3.25rem))/1.05 var(--fd);color:va
 .vsb{font:italic 900 2.6rem var(--fd);color:var(--a);border:4px solid var(--a);padding:6px 20px;transform:rotate(-8deg) skewX(-8deg);box-shadow:0 0 30px rgba(255,194,51,.35);animation:pulse 2s infinite}
 @keyframes pulse{50%{transform:rotate(-8deg) skewX(-8deg) scale(1.08)}}
 @media(max-width:760px){.vs{grid-template-columns:1fr}.vsb{justify-self:center}}
-/* chains */
-.grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}@media(max-width:900px){.grid5{grid-template-columns:1fr 1fr}}@media(max-width:480px){.grid5{grid-template-columns:1fr}}
-.ch{position:relative;padding:20px;background:var(--panel);border:1px solid var(--edge);overflow:hidden;transition:transform .2s,border-color .2s}
-.ch:hover{transform:translateY(-6px);border-color:var(--c)}
-.ch .bar{height:120px;margin:16px 0;background:#000;border:1px solid var(--edge);position:relative;overflow:hidden}
-.ch .bar i{position:absolute;inset:auto 0 0;height:30%;background:linear-gradient(0deg,var(--c),transparent);transition:height .9s cubic-bezier(.2,1.4,.4,1)}
-.ch.up .bar i{height:92%}.ch h3{font:italic 800 1.2rem var(--fd);color:var(--chrome)}.ch p{color:var(--mist);font-size:.92rem}
-.hint{font:600 .8rem var(--fh);color:var(--mist);margin-top:14px}
 /* steps */
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:s}@media(max-width:800px){.steps{grid-template-columns:1fr}}
 .step{padding:24px;border-left:3px solid var(--c);background:linear-gradient(90deg,rgba(255,255,255,.04),transparent)}
@@ -92,21 +84,21 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
 </style></head><body>
 <canvas id="sky"></canvas>
 <header><div class="wrap"><a class="brand" href="#"><img src="assets/logo.png" alt="">ONECOIN</a>
-<nav><a href="#versus">Why one</a><a href="#chains">Chains</a><a href="#how">How it works</a><a href="#buy">Contract</a><a class="btn go sm" href="#buy"><span>Buy</span></a></nav></div></header>
+<nav><a href="#versus">Why one</a><a href="#how">How it works</a><a href="#buy">Contract</a><a class="btn go sm" href="https://www.pangea.trade/app/t/0x373C863E4C34Db35B58C98Dd15a018E1ab53F6ea" target="_blank" rel="noopener"><span>Buy</span></a></nav></div></header>
 <main>
 <section class="hero"><div class="wrap">
-<div><span class="pill"><span class="dot"></span>Launching on 5 chains <span class="chip" data-c="sol">SOL</span></span>
+<div><span class="pill"><span class="dot"></span>Live on 5 chains <span class="chip" data-c="sol">SOL</span></span>
 <h1 class="word">ONECOIN</h1><p class="sub">one coin. five chains.</p>
 <p class="lede">Five chains. One coin. Everybody on the same side.</p>
-<p class="body">OneCoin is one meme token on Solana, Robinhood Chain, Base, Ethereum and BNB Chain. It's launching through Pangea, so you'll be able to buy on whichever chain you already use.</p>
-<div class="ctas"><a class="btn go" href="https://x.com/LaunchOnPangea" target="_blank" rel="noopener"><span>Follow the launch on Pangea</span></a><a class="btn" href="#chains"><span>Tap the chains</span></a></div>
+<p class="body">OneCoin is one meme token on Solana, Robinhood Chain, Base, Ethereum and BNB Chain. It launched through Pangea, so you can buy on whichever chain you already use.</p>
+<div class="ctas"><a class="btn go" href="https://www.pangea.trade/app/t/0x373C863E4C34Db35B58C98Dd15a018E1ab53F6ea" target="_blank" rel="noopener"><span>Buy on Pangea</span></a><a class="btn" href="#buy"><span>Contract addresses</span></a></div>
 <div class="frame ca"><div class="lbl">Contract address</div>
 <div class="tabs" role="tablist"><button data-c="sol" aria-selected="true">SOL</button><button data-c="rh">ROBINHOOD</button><button data-c="base">BASE</button><button data-c="eth">ETH</button><button data-c="bsc">BSC</button></div>
-<div class="addr"><code id="addr">TBA</code><button class="btn go sm" id="copy"><span>Copy</span></button></div>
-<div class="lbl" style="margin:8px 0 0" id="addrnote">Solana contract: TBA. Each chain will get its own address.</div></div></div>
+<div class="addr"><code id="addr" style="overflow-wrap:anywhere">92knjMkuhwaTPpSz8EDPesxiqkp83RBScby9jrTmU6ea</code><button class="btn go sm" id="copy"><span>Copy</span></button></div>
+<div class="lbl" style="margin:8px 0 0" id="addrnote">Solana contract. Each chain has its own address.</div></div></div>
 <div class="art"><div class="ring"></div><img src="assets/logo.png" alt="OneCoin logo"><span class="tag">one coin</span></div>
 </div>
-<div class="wrap"><div class="stats"><div><small>Ticker</small><b>TBA</b></div><div><small>Chains</small><b>5</b></div><div><small>Launchpad</small><b>Pangea</b></div><div><small>Contract</small><b>TBA</b></div></div></div>
+<div class="wrap"><div class="stats"><div><small>Ticker</small><b>$ONECOIN</b></div><div><small>Chains</small><b>5</b></div><div><small>Launchpad</small><b>Pangea</b></div><div><small>Pools live</small><b>5 / 5</b></div></div></div>
 <div class="ridge"><svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path fill="#0b0b1d" d="M0 60 L120 30 L240 55 L380 20 L520 50 L660 25 L800 58 L940 18 L1080 48 L1220 28 L1440 55 V90 H0Z"/><path fill="#050510" d="M0 75 L160 50 L300 70 L460 45 L620 72 L780 48 L940 74 L1100 46 L1260 70 L1440 52 V90 H0Z"/></svg></div>
 </section>
 <div class="marquee"><div class="track" id="track"></div></div>
@@ -116,51 +108,40 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
 <div class="vsb">VS</div>
 <div class="good"><h3>One</h3><p>OneCoin is a single coin across all five chains. Whichever chain you buy on, you're holding the same coin as everyone else.</p></div></div></div></section>
 
-<section class="blk reveal" id="chains"><div class="wrap"><h2>Light up all five</h2><p class="intro">Each chain has its own color. Tap a card to light it up, then light up all five.</p>
-<div class="grid5">
-<div class="ch" data-c="sol"><span class="chip">SOL</span><div class="bar"><i></i></div><h3>Solana</h3><p>Fast and cheap.</p></div>
-<div class="ch" data-c="rh"><span class="chip">RH</span><div class="bar"><i></i></div><h3>Robinhood Chain</h3><p>The newest link in the chain.</p></div>
-<div class="ch" data-c="base"><span class="chip">BASE</span><div class="bar"><i></i></div><h3>Base</h3><p>Onchain and social.</p></div>
-<div class="ch" data-c="eth"><span class="chip">ETH</span><div class="bar"><i></i></div><h3>Ethereum</h3><p>Where it all started.</p></div>
-<div class="ch" data-c="bsc"><span class="chip">BSC</span><div class="bar"><i></i></div><h3>BNB Chain</h3><p>A big, loud community.</p></div></div>
-<p class="hint" id="hint">0 / 5 chains lit</p></div></section>
 
 <section class="blk reveal" id="how"><div class="wrap"><h2>How it works</h2><p class="intro">One coin. Five homes. Here's the idea.</p>
 <div class="steps"><div class="step" data-c="v" style="--c:var(--v)"><h3>Pick your chain</h3><p>Use the chain and wallet you already have. You don't need to switch.</p></div>
-<div class="step" style="--c:var(--g)"><h3>Grab OneCoin</h3><p>Buy with that chain's official contract once it goes live on Pangea.</p></div>
+<div class="step" style="--c:var(--g)"><h3>Grab OneCoin</h3><p>Swap using the OneCoin contract for that chain, listed below.</p></div>
 <div class="step" style="--c:var(--p)"><h3>Same coin everywhere</h3><p>Whichever chain you're on, you hold the same OneCoin as the rest of the crew.</p></div></div></div></section>
 
 <section class="blk reveal" id="buy"><div class="wrap"><h2>How to buy</h2><div class="buy">
-<ol class="how"><li>Set up a wallet for the chain you want.</li><li>Add some of that chain's native token to pay gas.</li><li>Follow <a href="https://x.com/LaunchOnPangea" target="_blank" rel="noopener">@LaunchOnPangea</a> for the launch.</li><li>Paste the official contract address and swap.</li></ol>
+<ol class="how"><li>Set up a wallet for the chain you want.</li><li>Add some of that chain's native token to pay gas.</li><li>Open <a href="https://www.pangea.trade/app/t/0x373C863E4C34Db35B58C98Dd15a018E1ab53F6ea" target="_blank" rel="noopener">OneCoin on Pangea</a>.</li><li>Paste the official contract address and swap.</li></ol>
 <div class="frame"><div class="ca"><div class="lbl">Contract addresses</div>
-<p style="font:600 .95rem/2 var(--fh)"><span class="chip" data-c="sol">SOL</span> TBA<br><span class="chip" data-c="rh">RH</span> TBA<br><span class="chip" data-c="base">BASE</span> TBA<br><span class="chip" data-c="eth">ETH</span> TBA<br><span class="chip" data-c="bsc">BSC</span> TBA</p>
-<p class="warn">Only use addresses posted on the official OneCoin channels. Never share your seed phrase with anyone.</p></div></div></div></div></section>
+<p style="font:600 .95rem/2.1 var(--fh)"><span class="chip" data-c="sol">SOL</span> <span style="overflow-wrap:anywhere;font-size:.82rem">92knjMkuhwaTPpSz8EDPesxiqkp83RBScby9jrTmU6ea</span><br><span class="chip" data-c="rh">RH</span> <span style="overflow-wrap:anywhere;font-size:.82rem">0xF42B4E1A3fd374b1f849Bf898edc64ab17DF06Ea</span><br><span class="chip" data-c="base">BASE</span> <span style="overflow-wrap:anywhere;font-size:.82rem">0x456aC19C8a72Aed16376D57c367640D69ff9e6ea</span><br><span class="chip" data-c="eth">ETH</span> <span style="overflow-wrap:anywhere;font-size:.82rem">0x373C863E4C34Db35B58C98Dd15a018E1ab53F6ea</span><br><span class="chip" data-c="bsc">BSC</span> <span style="overflow-wrap:anywhere;font-size:.82rem">0x6b6b3E166EC666EA16525265c533360B769e56Ea</span></p>
+<p class="warn">Each address comes from the OneCoin token page on Pangea. Check the address before you swap. Never share your seed phrase with anyone.</p></div></div></div></div></section>
 </main>
-<footer><div class="wrap"><a class="brand" href="#"><img src="assets/logo.png" alt="">ONECOIN</a><div><a href="#">X</a><a href="https://x.com/LaunchOnPangea" target="_blank" rel="noopener">Pangea</a></div>
+<footer><div class="wrap"><a class="brand" href="#"><img src="assets/logo.png" alt="">ONECOIN</a><div><a href="#">X</a><a href="https://www.pangea.trade/app/t/0x373C863E4C34Db35B58C98Dd15a018E1ab53F6ea" target="_blank" rel="noopener">Pangea</a></div>
 <p class="disc">OneCoin is a meme token with no intrinsic value or expectation of financial return. Nothing on this site is financial advice. © 2026 OneCoin</p></div></footer>
 <script>
 // marquee
 const items=[['sol','SOL'],['rh','RH'],['base','BASE'],['eth','ETH'],['bsc','BSC']];
-let h='';for(let k=0;k<2;k++){items.forEach(([c,t],i)=>{h+=`<span class="chip" data-c="${c}">${t}</span>`+(i%2?'<em>one coin. five chains.</em>':'<span>launching on Pangea</span>')})}
+let h='';for(let k=0;k<2;k++){items.forEach(([c,t],i)=>{h+=`<span class="chip" data-c="${c}">${t}</span>`+(i%2?'<em>one coin. five chains.</em>':'<span>live on Pangea</span>')})}
 document.getElementById('track').innerHTML=h;
 // tabs
+const CA={"sol": "92knjMkuhwaTPpSz8EDPesxiqkp83RBScby9jrTmU6ea", "rh": "0xF42B4E1A3fd374b1f849Bf898edc64ab17DF06Ea", "base": "0x456aC19C8a72Aed16376D57c367640D69ff9e6ea", "eth": "0x373C863E4C34Db35B58C98Dd15a018E1ab53F6ea", "bsc": "0x6b6b3E166EC666EA16525265c533360B769e56Ea"};
 const names={sol:'Solana',rh:'Robinhood Chain',base:'Base',eth:'Ethereum',bsc:'BNB Chain'};
-document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tabs button').forEach(x=>x.setAttribute('aria-selected',x===b));document.getElementById('addrnote').textContent=names[b.dataset.c]+' contract: TBA. Each chain will get its own address.'});
-document.getElementById('copy').onclick=e=>{const s=e.currentTarget.querySelector('span');s.textContent='Not live yet';setTimeout(()=>s.textContent='Copy',1400)};
-// chains
-const cards=[...document.querySelectorAll('.ch')],hint=document.getElementById('hint');
-cards.forEach(c=>c.onclick=()=>{c.classList.toggle('up');const n=cards.filter(x=>x.classList.contains('up')).length;hint.textContent=n===5?'All 5 lit: one coin, five chains.':n+' / 5 chains lit';if(n===5)burst()});
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tabs button').forEach(x=>x.setAttribute('aria-selected',x===b));document.getElementById('addrnote').textContent=names[b.dataset.c]+' contract. Each chain has its own address.';document.getElementById('addr').textContent=CA[b.dataset.c]});
+document.getElementById('copy').onclick=async e=>{const s=e.currentTarget.querySelector('span'),v=document.getElementById('addr').textContent;try{await navigator.clipboard.writeText(v)}catch(_){const t=document.createElement('textarea');t.value=v;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove()}s.textContent='Copied!';setTimeout(()=>s.textContent='Copy',1400)};
 // reveal
 const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('in')),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));setTimeout(()=>document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in')),2500);
 // sky: stars + five rising lines
-const cv=document.getElementById('sky'),cx=cv.getContext('2d');let W,H,stars=[],parts=[];
+const cv=document.getElementById('sky'),cx=cv.getContext('2d');let W,H,stars=[];
 const cols=['#a06bff','#4a8cff','#3fe08a','#ffc233','#ff4fa3'];
 function rs(){W=cv.width=innerWidth;H=cv.height=innerHeight;stars=Array.from({length:Math.min(180,W/6)},()=>({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.3+.2,t:Math.random()*6}))}
 addEventListener('resize',rs);rs();
-function burst(){for(let i=0;i<120;i++)parts.push({x:W/2,y:H/2,vx:(Math.random()-.5)*12,vy:(Math.random()-.8)*12,l:60,c:cols[i%5]})}
 let t=0;(function f(){t+=.016;cx.clearRect(0,0,W,H);
 stars.forEach(s=>{cx.globalAlpha=.4+.6*Math.abs(Math.sin(t+s.t));cx.fillStyle='#fff';cx.fillRect(s.x,s.y,s.r,s.r)});
 cx.globalAlpha=.16;cx.lineWidth=2;cols.forEach((c,i)=>{cx.strokeStyle=c;cx.beginPath();for(let x=0;x<=W;x+=20){const y=H*.92-x/W*H*.45+Math.sin(x*.01+t*1.5+i)*14-i*10;x?cx.lineTo(x,y):cx.moveTo(x,y)}cx.stroke()});
-cx.globalAlpha=1;parts=parts.filter(p=>p.l-->0);parts.forEach(p=>{p.x+=p.vx;p.y+=p.vy;p.vy+=.25;cx.fillStyle=p.c;cx.fillRect(p.x,p.y,4,4)});
+
 requestAnimationFrame(f)})();
 </script></body></html>
